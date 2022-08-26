@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Rubik+Maze');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Microbe');
+
+.cell {
+  background-color: mintcream; 
+  border: solid;
+  border-color: rgb(185, 246, 216);
+  width: 25px;
+  height: 25px;
+  margin: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.selected.active {
+  background-color: rgb(203, 238, 197);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selected {
+  background-color:rgb(221, 246, 233);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active {
+  background-color: rgb(239, 252, 214);
+}
+
+.board {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  align-items:center;
+}
+.buttonRow{
+  display: flex; 
+  justify-content: center;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin-bottom: 0;
+  font-family: 'Rubik Maze';
+  font-size: 60px;
+  font-weight: normal;
+  animation: infinite-rainbow-color 3s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  margin: 25px;
+  width: 40%;
+  border: black;
+  align-items: center;
+  background-color:rgb(209, 233, 233)
+  /*animation: infinite-rainbow-background 6s infinite;*/
+}
+
+@keyframes infinite-rainbow-color {
+  20% {color: rgb(101, 127, 133);}
+  40% {color: rgba(132, 210, 195, 0.931);}
+  60% {color: rgb(180, 209, 112);}
+  80% {color: rgb(80, 80, 208);}
+}
+
+@keyframes infinite-rainbow-background {
+  20% {background-color: rgb(198, 234, 172);}
+  40% {background-color: rgba(213, 255, 255, 0.589);}
+  60% {background-color: rgb(223, 247, 205);}
+  80% {background-color: rgb(198, 234, 172);}
+}
+
+
+.cell:hover {
+  background-color:rgb(214, 255, 241);
+}
+
+.grid {
+  max-width: 95%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
