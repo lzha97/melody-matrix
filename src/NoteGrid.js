@@ -43,14 +43,6 @@ class NoteGrid extends React.Component {
         }
     }
 
-    componentDidMount() {
-        console.debug('grid mounted with active index:', this.state.activeColumnIdx);
-    }
-
-    componentWillUnmount() {
-        console.debug('unmounting grid with active index', this.state.activeColumnIdx)
-    }
-
     activateNextColumn() {
         console.debug('activate next grid column with state active index before change:', this.state.activeColumnIdx)
         this.setState({

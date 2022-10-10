@@ -11,9 +11,9 @@ class NoteColumn extends React.Component {
         synth: props.synth,
         updateSelectedNotes: props.updateSelectedNotes
     };
-      //this.toneMap =  { 0: "D#6", 1: "C#6", 2: "A#5", 3: "G#5", 4: "F#5", 5: "D#5", 6: "C#5", 7: "A#4", 8: "G#4", 9: "F#4", 10: "D#4", 11: "C#4" }
+      this.toneMap =  { 0: "D#6", 1: "C#6", 2: "A#5", 3: "G#5", 4: "F#5", 5: "D#5", 6: "C#5", 7: "A#4", 8: "G#4", 9: "F#4", 10: "D#4", 11: "C#4" }
       //this.toneMap =  { 0: "B5", 1: "G5", 2: "D5", 3: "C5", 4: "B4", 5: "G4", 6: "D4", 7: "C4", 8: "B3", 9: "G3", 10: "D4", 11: "C3" }
-      this.toneMap =  { 0: "D#5", 1: "C5", 2: "D5", 3: "A#4", 4: "G4", 5: "D#4", 6: "C4", 7: "D4", 8: "A#3", 9: "G3", 10: "D#3", 11: "C3" }
+      //this.toneMap =  { 0: "D#5", 1: "C5", 2: "D5", 3: "A#4", 4: "G4", 5: "D#4", 6: "C4", 7: "D4", 8: "A#3", 9: "G3", 10: "D#3", 11: "C3" }
     }
 
     playSynth(notes, synth) {

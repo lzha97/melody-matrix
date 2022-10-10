@@ -36,12 +36,11 @@ class App extends React.Component {
 
   handleClick = event => {
     this.setState({ playLoop: !this.state.playLoop, buttonText: this.state.playLoop ? "Play" : "Stop" })
-
-
   }
+
   handleClearClick = event => {
     console.log('Clearing the matrix...')
-    this.updateSelectedNotes([...Array(15)].map((_, i) =>[]));
+    window.location.reload(false);
   }
 
   updateSelectedNotes = (selectedNotes) => {
@@ -53,7 +52,6 @@ class App extends React.Component {
       <div className="board">
 
         <h2>Melody Matrix</h2>
-        <p>Press the board to make a melody!</p>
 
         <NoteGrid selectedNotes={this.state.selectedNotes} playLoop={this.state.playLoop} synth={synth} updateSelectedNotes={this.updateSelectedNotes} />
 
