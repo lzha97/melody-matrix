@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/melody-matrix/static/css/main.a3f3e9d6.css",
-    "main.js": "/melody-matrix/static/js/main.806284ab.js",
+    "main.css": "/melody-matrix/static/css/main.aa03bfda.css",
+    "main.js": "/melody-matrix/static/js/main.4edfecc2.js",
     "static/js/787.c71f0800.chunk.js": "/melody-matrix/static/js/787.c71f0800.chunk.js",
     "index.html": "/melody-matrix/index.html",
-    "main.a3f3e9d6.css.map": "/melody-matrix/static/css/main.a3f3e9d6.css.map",
-    "main.806284ab.js.map": "/melody-matrix/static/js/main.806284ab.js.map",
+    "main.aa03bfda.css.map": "/melody-matrix/static/css/main.aa03bfda.css.map",
+    "main.4edfecc2.js.map": "/melody-matrix/static/js/main.4edfecc2.js.map",
     "787.c71f0800.chunk.js.map": "/melody-matrix/static/js/787.c71f0800.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3f3e9d6.css",
-    "static/js/main.806284ab.js"
+    "static/css/main.aa03bfda.css",
+    "static/js/main.4edfecc2.js"
   ]
 }
